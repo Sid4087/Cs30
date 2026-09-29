@@ -18,8 +18,10 @@ public class Roll {
 	private JLabel die2;
 	
 	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
+	public static void main(String[] args) 
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
 			public void run() {
 				try {
 					Roll window = new Roll();
@@ -36,19 +38,29 @@ public class Roll {
 		initialize();
 	}
 
-	private void initialize() {
+	private void initialize() 
+	{
+		
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die1.gif");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die2.gif");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die3.gif");		
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die4.gif");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die5.gif");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die6.gif");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die1.png");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die2.png");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die3.png");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die4.png");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die5.png");
+		new ImageIcon("C:\\Users\\89186001\\Downloads\\die6.png");
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 217, 254);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JButton rollDice = new JButton("Roll Dice");
 		rollDice.setBounds(52, 123, 89, 37);
-		rollDice.addKeyListener(new KeyAdapter() {
-			
-			public void keyPressed(KeyEvent e) 
-			{
-			}
-		});
+		
 		frame.getContentPane().setLayout(null);
 		frame.getContentPane().add(rollDice);
 		
@@ -59,10 +71,8 @@ public class Roll {
 
 		    int roll1 = rand.nextInt(6) + 1;
 		    int roll2 = rand.nextInt(6) + 1;
-		    die1.setIcon(new ImageIcon
-		    		("C:\\Users\\89186001\\Downloads\\die" + roll1 + ".gif"));
-		    ImageIcon icon = new ImageIcon(
-		    		"C:\\Users\\89186001\\Downloads\\die" + roll2 + ".png");
+		    die1.setIcon(new ImageIcon("C:\\Users\\89186001\\Downloads\\die" + roll1 + ".gif"));
+		    ImageIcon icon = new ImageIcon("C:\\Users\\89186001\\Downloads\\die" + roll2 + ".png");
 		    
 		    Image img = icon.getImage();
 			Image scaled = img.getScaledInstance(75,75, Image.SCALE_SMOOTH);
