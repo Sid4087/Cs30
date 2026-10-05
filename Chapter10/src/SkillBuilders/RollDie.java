@@ -11,7 +11,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
 
-public class Roll {
+public class RollDie {
 
 	private JFrame frame;
 	private JLabel die1;
@@ -24,7 +24,7 @@ public class Roll {
 		{
 			public void run() {
 				try {
-					Roll window = new Roll();
+					RollDie window = new RollDie();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -34,7 +34,7 @@ public class Roll {
 	}
 
 
-	public Roll() {
+	public RollDie() {
 		initialize();
 	}
 

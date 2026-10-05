@@ -44,7 +44,9 @@ public class ClassDemo {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() {
+	private void initialize() 
+	{
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 710, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
