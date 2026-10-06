@@ -129,20 +129,15 @@ public class SchoolInfo
      */
     private void createImages(JPanel panel)
     {
-        ImageIcon crescentImage = loadImage(
-                "C:\\Users\\89186001\\Downloads\\CresentHeights.png");
+        ImageIcon crescentImage = loadImage("C:\\Users\\89186001\\Downloads\\CresentHeights.png");
 
-        ImageIcon westernImage = loadImage(
-                "C:\\Users\\89186001\\Downloads\\WesternRedHawks.png");
+        ImageIcon westernImage = loadImage("C:\\Users\\89186001\\Downloads\\WesternRedHawks.png");
 
-        ImageIcon aberhartImage = loadImage(
-                "C:\\Users\\89186001\\Downloads\\Aberhart.png");
+        ImageIcon aberhartImage = loadImage("C:\\Users\\89186001\\Downloads\\Aberhart.png");
 
-        ImageIcon pearsonImage = loadImage(
-                "C:\\Users\\89186001\\Downloads\\Pearson.png");
+        ImageIcon pearsonImage = loadImage("C:\\Users\\89186001\\Downloads\\Pearson.png");
 
-        ImageIcon placeholderImage = loadImage(
-                "C:\\Users\\89186001\\Downloads\\schoolPlaceHolder.png");
+        ImageIcon placeholderImage = loadImage("C:\\Users\\89186001\\Downloads\\schoolPlaceHolder.png");
 
         ImageIcon resizedCrescent = resizeImage(crescentImage);
         ImageIcon resizedWestern = resizeImage(westernImage);
@@ -484,7 +479,7 @@ public class SchoolInfo
         String gradeText = grade.getSelectedItem().toString();
         String schoolText = school.getSelectedItem().toString();
 
-        info.setText(firstNameText + " " + lastNameText + " is in grade " + gradeText + " and goes to " + schoolText + " highschool");
+        info.setText(firstNameText + " " + lastNameText + " is in grade " + gradeText + " and goes to " + schoolText + " highschool.");
     }
 
     /**
